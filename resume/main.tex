@@ -1,0 +1,185 @@
+%-------------------------
+% Resume in LaTeX
+% Based on Jake's Resume Template
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{3pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape TestJoshua Aney} \\ \vspace{1pt}
+    \small Bozeman, MT $|$
+    \href{mailto:josh.aney@icloud.com}{josh.aney@icloud.com} $|$
+    \href{https://github.com/joshaney324}{github.com/joshaney324} $|$
+    \href{https://joshaney324.github.io/PersonalWebsite/}{joshaney324.github.io/PersonalWebsite}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Montana State University}{Bozeman, MT}
+      {Bachelor of Science, Computer Science, GPA: 3.96}{May 2026}
+      % \resumeItemListStart
+      %   \resumeItem{President's List: Spring 2023, Fall 2023, Spring 2024, Spring 2025, Fall 2025 (4.0 semesters)}
+      %   \resumeItem{Dean's List: Fall 2022, Fall 2024}
+      % \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------RELEVANT COURSEWORK & SKILLS-----------
+\section{Skills \& Coursework}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:} Python, MATLAB, Java, C, SQL, C\# \\
+     \textbf{Frameworks:} PyTorch, TensorFlow, WebDataset, .NET Core, SLURM, NumPy, Matplotlib \\
+     \textbf{Tools:} Linux, Jetbrains Products, GitHub, VSCode, Adobe Illustrator, Overleaf, Claude Code \\
+     \textbf{Coursework:} Machine Learning, Linear Algebra, Artificial Intelligence, Greedy Algorithms, Flow Networks, Optimization, Linear and Integer Linear Programming, Technical Writing
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+   \resumeSubheading
+      {Research Technologist}{June 2026 - Current, (Intern Summers 2024, 2025)}
+      {CaMP Lab (Cybernetics and Motor Physiology), Mayo Clinic}{Rochester, MN}
+      \resumeItemListStart
+        \resumeItem{\textbf{Tools}: MATLAB, Signal Processing, Adobe Illustrator, Linear Algebra, Technical Writing}
+        \resumeItem{Conducted algorithmic analysis on human SEEG data to study how the brain responds to auditory stimuli.}
+        \resumeItem{Implemented signal processing pipelines including noise reduction, baseline correction, and artifact rejection.}
+        \resumeItem{Applied and modified Canonical Response Parameterization to allow for better temporal feature extraction when applied to auditory evoked responses.}
+        \resumeItem{Produced a first-author manuscript in preparation: \textbf{Aney J}, Jensen MA, Kerezoudis P, Baker MR, Miller KJ. \emph{Parameterization of intracranial auditory evoked responses reveals cortical novelty and attention effects.} Mayo Clinic, 2025.}
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Undergraduate Research Assistant}{January 2026 - Current}
+      {HACR Lab (Harnessing Automation in Cybersecurity Reasoning), Montana State University}{Bozeman, MT}
+      \resumeItemListStart
+        \resumeItem{\textbf{Tools}: Pytorch, Ghidra, High Performance Computing, SLURM}
+        \resumeItem{Build pipelines to produce control flow graphs from compiled binary packages for code embedding generation.}
+        \resumeItem{Design Graph Neural Network architectures using PyTorch based on recent research publications.}
+        \resumeItem{Run machine learning workloads on Tempest, Montana State University's high performance computing system.}
+      \resumeItemListEnd
+
+   
+  \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL PROJECTS-----------
+\section{Technical Projects}
+
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Machine Learning Models from Scratch} $|$ \emph{Python, NumPy, Linear Algebra, Latex}}{2024-2025}
+      \resumeItemListStart
+        \resumeItem{Implemented the following machine learning algorithms from scratch: Naïve Bayes, K-Nearest Neighbors, K-Means, and DBSCAN, Multi-Layer-Perceptron, Q-Learning, SARSA, and Value Iteration}
+        % \resumeItem{Implemented a First-Order-Logic engine}
+        \resumeItem{Implemented the following optimization algorithms from scratch: Backpropagation, Genetic Algorithm, Differential Evolution, Particle Swarm Optimization, and Simulated Annealing}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Bozeman Bike Trails Application} $|$ \emph{C\#, Razor Pages, SQL Server, Mapbox}}{2024}
+      \resumeItemListStart
+        \resumeItem{Developed a web application to track user-ridden bike trail GPS data}
+      \resumeItemListEnd
+
+      \resumeProjectHeading
+      {\textbf{Hand Tracking / ASL Alphabet Detection} $|$ \emph{Python, TensorFlow, MediaPipe}}{2024}
+      \resumeItemListStart
+        \resumeItem{Created a pipeline to collect data, train a dense neural network, and provide real time predictions for video inputs.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXTRACURRICULAR ACTIVITIES-----------
+\section{Extracurricular Activities \& Leadership}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {President}{August 2023 -- Present}
+      {Montana State University Tennis Club}{Bozeman, MT}
+
+    \resumeSubheading
+      {Section Leader}{April 2025 -- January 2026}
+      {Montana State University Drumline}{Bozeman, MT}
+
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
