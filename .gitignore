@@ -1,2 +1,5 @@
-.idea
+.idea/
 .claude
+.DS_store
+.vscode
+.venv/
