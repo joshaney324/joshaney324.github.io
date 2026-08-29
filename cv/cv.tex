@@ -33,7 +33,7 @@
 
 % Section formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+    \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 \pdfgentounicode=1
@@ -42,21 +42,21 @@
 % Custom commands
 
 \newcommand{\resumeItem}[1]{
-  \item\small{#1 \vspace{-2pt}}
+    \item\small{#1 \vspace{-2pt}}
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{3pt}\item
+    \vspace{3pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \small#2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+    \textbf{#1} & \small#2 \\
+    \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+    \small#1 & #2 \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -75,75 +75,70 @@
 \begin{document}
 
 %----------HEADING----------
-\begin{center}
-    \textbf{\Huge \scshape Joshua Aney} \\ \vspace{1pt}
-    \small Rochester, MN $|$
-    \href{mailto:josh.aney@icloud.com}{josh.aney@icloud.com} $|$
-    \href{https://github.com/joshaney324}{github.com/joshaney324} $|$
-    \href{https://joshaney324.github.io}{joshaney324.github.io}
-\end{center}
+    \begin{center}
+        \textbf{\Huge \scshape Joshua Aney} \\ \vspace{1pt}
+        \small Rochester, MN $|$
+        \href{mailto:josh.aney@icloud.com}{josh.aney@icloud.com} $|$
+        \href{https://github.com/joshaney324}{github.com/joshaney324} $|$
+        \href{https://joshaney324.github.io}{joshaney324.github.io}
+    \end{center}
 
 %-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
+
+
+    \section{Education}
+    \resumeSubHeadingListStart
     \resumeSubheading
-      {Montana State University}{Bozeman, MT}
-      {Bachelor of Science, Computer Science, GPA: 3.96}{May 2026}
-  \resumeSubHeadingListEnd
+    {Montana State University}{Bozeman, MT}
+    {Bachelor of Science, Computer Science, GPA: 3.96}{May 2026}
+    \resumeSubHeadingListEnd
 
 %-----------RESEARCH EXPERIENCE-----------
-\section{Research Experience}
-  \resumeSubHeadingListStart
 
-   \resumeSubheading
-      {Research Technologist}{June 2026 -- Present}
-      {CaMP Lab (Cybernetics and Motor Physiology), Mayo Clinic}{Rochester, MN}
-      \resumeItemListStart
-        \resumeItem{Previously Summer Research Intern in the same lab, 2024 and 2025.}
-        \resumeItem{Conducted algorithmic analysis on human sEEG data.}
-        \resumeItem{Implemented signal processing pipelines including noise reduction, baseline correction, and artifact rejection.}
-        % \resumeItem{Applied and modified algorithmic and data-driven response parameterization to evoked responses.}
-        \resumeItem{Developed a method for dynamic brain network identification using evoked responses.}
-        % \resumeItem{Leading development of a reference and preprocessing guide for general sEEG data analysis.}
-      \resumeItemListEnd
 
+    \section{Research Experience}
+    \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Undergraduate Research Assistant}{January 2026 -- June 2026}
-      {HACR Lab (Harnessing Automation in Cybersecurity Reasoning), Montana State University}{Bozeman, MT}
-      \resumeItemListStart
-        \resumeItem{Built pipelines to produce control flow graphs from compiled binary packages for code embedding generation.}
-        \resumeItem{Designed Graph Neural Network architectures using PyTorch based on recent research publications.}
-        \resumeItem{Ran machine learning workloads on Tempest, Montana State University's high performance computing system.}
-      \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
-
-%-----------TEACHING & CURRICULUM DEVELOPMENT-----------
-\section{Teaching \& Curriculum Development}
-  \resumeSubHeadingListStart
+    {Research Technologist}{June 2026 -- Present}
+    {CaMP Lab (Cybernetics and Motor Physiology), Mayo Clinic}{Rochester, MN}
+    \resumeItemListStart
+    \resumeItem{Performed motor and langauge mapping on patients with epilepsy using computational tehcniques to identify anatomical locations with activity during tasks.}
+    \resumeItem{Recorded data for experiments in the Epilepsy Monitoring Unity (EMU) from Stereoelectroencephalography (SEEG) leads and preprocessed the raw data from BCI2000 into a more friendly format for analysis.}
+    \resumeItem{Developed an explainable computational method for dynamic brain network identification using evoked responses.}
+    \resumeItemListEnd
 
     \resumeSubheading
-      {Independent Study -- CSCI 491-7 Hypermedia Systems}{Fall 2025}
-      {Montana State University}{Bozeman, MT}
-      \resumeItemListStart
-        \resumeItem{Collaborated with a professor and a team of three students to design and develop a semester-long project template for an advanced web development course teaching a hypermedia-first approach using server-side rendering with HTMX.}
-        \resumeItem{Implemented core website functionality, including the MVC controller layer, authentication and authorization systems, and multi-step business workflows, for a veterinary clinic management system.}
-        \resumeItem{Designed a database schema with 11 interconnected tables, including polymorphic relationships and conversation-based messaging, to teach role-based access control, pagination, and transactional integrity.}
-        \resumeItem{Structured a progressive assignment sequence so students could implement new controllers by following established patterns in the codebase.}
-      \resumeItemListEnd
+    {Undergraduate Research Assistant}{January 2026 -- June 2026}
+    {HACR Lab (Harnessing Automation in Cybersecurity Reasoning), Montana State University}{Bozeman, MT}
+    \resumeItemListStart
+    \resumeItem{Built pipelines to produce control flow graphs from compiled binary packages for code embedding generation.}
+    \resumeItem{Designed Graph Neural Network architectures using PyTorch based on recent research publications.}
+    \resumeItem{Ran machine learning workloads on Tempest, Montana State University's high performance computing system.}
+    \resumeItemListEnd
 
-  \resumeSubHeadingListEnd
+    \resumeSubheading
+    {Summer Research Intern}{Summers 2024, 2025}
+    {CaMP Lab (Cybernetics and Motor Physiology), Mayo Clinic}{Rochester, MN}
+    \resumeItemListStart
+    \resumeItem{Conducted algorithmic analysis on human sEEG data.}
+    \resumeItem{Implemented signal processing pipelines including noise reduction, baseline correction, and artifact rejection.}
+    \resumeItem{Used explainable machine learning techniques to parameterize evoked response data.}
+    \resumeItemListEnd
 
-%-----------PUBLICATIONS & PRESENTATIONS-----------
-\section{Publications \& Presentations}
-  \resumeSubHeadingListStart
+    \resumeSubHeadingListEnd
+
+    %-----------PUBLICATIONS & PRESENTATIONS-----------
+
+
+    \section{Publications \& Presentations}
+    \resumeSubHeadingListStart
 
     \resumeItem{\textbf{Papers in Preparation}}
-      \resumeItemListStart
-        \resumeItem{Aney, J., et al. \textit{Response Lag Correlation: Identifying response networks through evoked response lags.} Paper in preparation for submission.}
-        \resumeItem{Aney, J., et al. \textit{A Reference and Preprocessing Guide for sEEG Data.} Paper in preparation for submission.}
-      \resumeItemListEnd
+    \resumeItemListStart
+    \resumeItem{Aney, J., et al. \textit{Response Lag Correlation: Identifying response networks through evoked response lags.} Paper in preparation for submission.}
+    \resumeItem{Aney, J., et al. \textit{A Reference and Preprocessing Guide for sEEG Data.} Paper in preparation for submission.}
+    \resumeItemListEnd
 
     % \resumeItem{\textbf{Abstracts}}
     %   \resumeItemListStart
@@ -152,77 +147,111 @@
     %   \resumeItemListEnd
 
     \resumeItem{\textbf{Posters and Abstracts}}
-      \resumeItemListStart
-        \resumeItem{Aney, J., Jensen, M., Kerezoudis, P., Canales-Johnson, A., Hermes, D., Baker, M., Miller, K. \textit{Parameterization of intracranial auditory evoked responses reveals cortical novelty and attention effects.} Poster presented at BRAIN Initiative Conference, 2026.}
-        \resumeItem{Aney, J., Jensen, M., Kerezoudis, P., Canales-Johnson, A., Hermes, D., Baker, M., Miller, K. \textit{Parameterization of intracranial auditory evoked responses reveals cortical novelty and attention effects.} Abstract submitted to GATTLE, Mayo Clinic, 2026.}
-      \resumeItemListEnd
+    \resumeItemListStart
+    \resumeItem{Aney, J., Jensen, M., Kerezoudis, P., Canales-Johnson, A., Hermes, D., Baker, M., Miller, K. \textit{Parameterization of intracranial auditory evoked responses reveals cortical novelty and attention effects.} BRAIN Initiative Conference, 2026.}
+    \resumeItem{Aney, J., Jensen, M., Kerezoudis, P., Canales-Johnson, A., Hermes, D., Baker, M., Miller, K. \textit{Parameterization of intracranial auditory evoked responses reveals cortical novelty and attention effects.} GATTLE Neurosurgery Symposium, Mayo Clinic, 2026.}
+    \resumeItemListEnd
 
-  \resumeSubHeadingListEnd
+    \resumeSubHeadingListEnd
+
+%-----------TEACHING & CURRICULUM DEVELOPMENT-----------
+
+
+    \section{Teaching \& Curriculum Development}
+    \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {Independent Study -- CSCI 491-7 Hypermedia Systems}{Fall 2025}
+    {Montana State University}{Bozeman, MT}
+    \resumeItemListStart
+    \resumeItem{Collaborated with a professor and a team of three students to design and develop a semester-long project template for an advanced web development course teaching a hypermedia-first approach using server-side rendering with HTMX.}
+    \resumeItem{Implemented core website functionality, including the MVC controller layer, authentication and authorization systems, and multi-step business workflows, for a veterinary clinic management system.}
+    \resumeItem{Designed a database schema with 11 interconnected tables, including polymorphic relationships and conversation-based messaging, to teach role-based access control, pagination, and transactional integrity.}
+    \resumeItem{Structured a progressive assignment sequence so students could implement new controllers by following established patterns in the codebase.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {TA - CSCI 132 (Data Structures and Algorithms)}{Sprint 2026}
+    {Montana State University}{Bozeman, MT}
+    \resumeItemListStart
+    \resumeItem{Assisted students in learning core data structures algorithms (trees, hashmaps, depth first search, etc.)}
+    \resumeItem{Taught students how to debug in their IDE's.}
+    \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
 
 
 %-----------TECHNICAL PROJECTS-----------
-\section{Technical Projects}
 
-  \resumeSubHeadingListStart
 
-    \resumeProjectHeading
-      {\textbf{Machine Learning and AI Models from Scratch}}{2024-2026}
-      \resumeItemListStart
-        \resumeItem{Implemented the following machine learning algorithms from scratch: Naïve Bayes, K-Nearest Neighbors, K-Means, and DBSCAN, Multi-Layer-Perceptron, Q-Learning, SARSA, and Value Iteration}
-        \resumeItem{Implemented a First-Order-Logic engine to perform inference on knowledge bases using resolution.}
-        \resumeItem{Implemented the following optimization algorithms from scratch: Backpropagation, Genetic Algorithm, Differential Evolution, Particle Swarm Optimization, and Simulated Annealing}
-      \resumeItemListEnd
+    \section{Technical Projects}
+
+    \resumeSubHeadingListStart
 
     \resumeProjectHeading
-      {\textbf{Prize-Collecting TSP Solver}}{2026}
-      \resumeItemListStart
-        \resumeItem{Formulated the Prize-Collecting Traveling Salesman Problem as a mixed-integer linear program and solved it exactly using IBM CPLEX.}
-        \resumeItem{Implemented a genetic algorithm as an alternative heuristic solver and compared solution quality and runtime against the exact CPLEX formulation.}
-      \resumeItemListEnd
+    {\textbf{Machine Learning and AI Models from Scratch}}{2024-2026}
+    \resumeItemListStart
+    \resumeItem{Implemented the following machine learning algorithms from scratch: Naïve Bayes, K-Nearest Neighbors, K-Means, and DBSCAN, Multi-Layer-Perceptron, Q-Learning, SARSA, and Value Iteration}
+    \resumeItem{Implemented a First-Order-Logic engine to perform inference on knowledge bases using resolution.}
+    \resumeItem{Implemented the following optimization algorithms from scratch: Backpropagation, Genetic Algorithm, Differential Evolution, Particle Swarm Optimization, and Simulated Annealing}
+    \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{Bozeman Bike Trails Application}}{2024}
-      \resumeItemListStart
-        \resumeItem{Developed a web application to track user-ridden bike trail GPS data}
-      \resumeItemListEnd
+    {\textbf{Prize-Collecting TSP Solver}}{2026}
+    \resumeItemListStart
+    \resumeItem{Formulated the Prize-Collecting Traveling Salesman Problem as a mixed-integer linear program and solved it exactly using IBM CPLEX.}
+    \resumeItem{Implemented a genetic algorithm as an alternative heuristic solver and compared solution quality and runtime against the exact CPLEX formulation.}
+    \resumeItemListEnd
 
-      \resumeProjectHeading
-      {\textbf{Hand Tracking / ASL Alphabet Detection}}{2024}
-      \resumeItemListStart
-        \resumeItem{Created a pipeline to collect data, train a dense neural network, and provide real time predictions for video inputs.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
+    \resumeProjectHeading
+    {\textbf{Bozeman Bike Trails Application}}{2024}
+    \resumeItemListStart
+    \resumeItem{Developed a web application to track user-ridden bike trail GPS data}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{Hand Tracking / ASL Alphabet Detection}}{2024}
+    \resumeItemListStart
+    \resumeItem{Created a pipeline to collect data, train a dense neural network, and provide real time predictions for video inputs.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
 
 %-----------HONORS & AWARDS-----------
-\section{Honors \& Awards}
- \begin{itemize}[leftmargin=0.15in, label={}]
+
+
+    \section{Honors \& Awards}
+    \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{President's List:} Spring 2022; Spring 2023, Fall 2023; Spring 2024; Spring 2025, Fall 2025; Spring 2026, Fall 2026 \\
-     \textbf{Dean's List:} Fall 2022; Fall 2024
+        \textbf{President's List:} Spring 2022; Spring 2023, Fall 2023; Spring 2024; Spring 2025, Fall 2025; Spring 2026, Fall 2026 \\
+        \textbf{Dean's List:} Fall 2022; Fall 2024
     }}
- \end{itemize}
+    \end{itemize}
 
 %-----------OTHER ACTIVITIES-----------
-\section{Other Activities}
-  \resumeSubHeadingListStart
+
+
+    \section{Other Activities}
+    \resumeSubHeadingListStart
 
     \resumeSubheading
-      {President}{August 2023 -- May 2026}
-      {Montana State University Tennis Club}{Bozeman, MT}
+    {President}{August 2023 -- May 2026}
+    {Montana State University Tennis Club}{Bozeman, MT}
 
     \resumeSubheading
-      {Section Leader}{April 2025 -- January 2026}
-      {Montana State University Drumline}{Bozeman, MT}
+    {Section Leader}{April 2025 -- January 2026}
+    {Montana State University Drumline}{Bozeman, MT}
 
     \resumeSubheading
-      {Tennis Coach}{Summers 2023, 2025}
-      {Rochester Tennis Connection}{Rochester, MN}
+    {Tennis Coach}{Summers 2023, 2025}
+    {Rochester Tennis Connection}{Rochester, MN}
 
     \resumeSubheading
-      {Substitute Tennis Coach}{2022 -- 2026}
-      {Bobcat Anderson Tennis Center, Montana State University}{Bozeman, MT}
+    {Substitute Tennis Coach}{2022 -- 2026}
+    {Bobcat Anderson Tennis Center, Montana State University}{Bozeman, MT}
 
-  \resumeSubHeadingListEnd
+    \resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
